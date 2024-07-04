@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input, button {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Book</h1>
+
+        <h2>Add Grade</h2>
+        <input type="text" id="addStudentName" placeholder="Student Name">
+        <input type="text" id="addSubject" placeholder="Subject">
+        <input type="number" id="addGrade" placeholder="Grade">
+        <button onclick="addGrade()">Add Grade</button>
+
+        <h2>Update Grade</h2>
+        <input type="text" id="updateStudentName" placeholder="Student Name">
+        <input type="text" id="updateSubject" placeholder="Subject">
+        <input type="number" id="updateGrade" placeholder="Grade">
+        <button onclick="updateGrade()">Update Grade</button>
+
+        <h2>Get Grade</h2>
+        <input type="text" id="getStudentName" placeholder="Student Name">
+        <input type="text" id="getSubject" placeholder="Subject">
+        <button onclick="getGrade()">Get Grade</button>
+        <p id="displayGrade">Grade: </p>
+
+        <h2>Average Grade</h2>
+        <input type="text" id="avgSubject" placeholder="Subject">
+        <button onclick="averageGrade()">Get Average Grade</button>
+        <p id="displayAvgGrade">Average Grade: </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

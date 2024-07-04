@@ -1,0 +1,91 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_studentName",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_subject",
+                "type": "string"
+            },
+            {
+                "internalType": "uint8",
+                "name": "_grade",
+                "type": "uint8"
+            }
+        ],
+        "name": "addGrade",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_studentName",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_subject",
+                "type": "string"
+            },
+            {
+                "internalType": "uint8",
+                "name": "_newGrade",
+                "type": "uint8"
+            }
+        ],
+        "name": "updateGrade",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_studentName",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_subject",
+                "type": "string"
+            }
+        ],
+        "name": "getGrade",
+        "outputs": [
+            {
+                "internalType": "uint8",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_subject",
+                "type": "string"
+            }
+        ],
+        "name": "averageGrade",
+        "outputs": [
+            {
+                "internalType": "uint8",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
